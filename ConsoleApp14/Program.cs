@@ -16,9 +16,9 @@ namespace ConsoleApp14
             int[] arr_max = new int[40];
             
 
-            FileStream file1 = new FileStream("C:\\Users\\user\\Desktop\\Разработка програмных модулей\\ConsoleApp14\\F1.txt", FileMode.Open); //создаем файловый поток
+            FileStream file1 = new FileStream("C:\\F1.txt", FileMode.OpenOrCreate); //создаем файловый поток
             StreamWriter writer = new StreamWriter(file1); //создаем «потоковый писатель» и связываем его с файловым потоком
-            FileStream file2 = new FileStream("C:\\Users\\user\\Desktop\\Разработка програмных модулей\\ConsoleApp14\\F2.txt", FileMode.Open); //создаем файловый поток
+            FileStream file2 = new FileStream("C:\\F2.txt", FileMode.OpenOrCreate); //создаем файловый поток
             StreamWriter writer2 = new StreamWriter(file2); //создаем «потоковый писатель» и связываем его с файловым потоком
 
             Random random = new Random();
